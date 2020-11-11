@@ -1,0 +1,51 @@
+
+<img src="<%= @flat.photo_url %>" class="banner">
+
+<div class="flat-container">
+  <div class="flat-info">
+    <div class="info-card">
+      <h2><%= @flat.name %></h2>
+      <p><%= @flat.address %></p>
+    </div>
+
+    <div class="info-card">
+      <h3>A bit more about this flat...</h3>
+      <p><%= @flat.description %></p>
+      <img src="https://source.unsplash.com/AFB6S2kibuk/4000×2667">
+    </div>
+  </div>
+
+  <div class="flat-options">
+    <div class="date-form">
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">From:</div>
+        </div>
+        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">To:</div>
+        </div>
+        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      </div>
+
+      <button type="button" class="btn btn-warning btn-lg btn-block">Book</button>
+    </div>
+
+    <div class="info-card">
+      <h3>Details</h3>
+      <p>🧍 <%= @flat.number_of_guests %> &nbsp;&nbsp;&nbsp;&nbsp; 💵 <%= @flat.price_per_night %></p>
+    </div>
+
+    <div class="share-card">
+      <p>Share</p>
+      <div>
+        <a href="">🅵</a>
+        <a href="">🆃</a>
+        <a href="">🅿</a>
+      </div>
+    </div>
+  </div>
+</div>

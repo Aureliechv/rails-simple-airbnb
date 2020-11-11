@@ -1,0 +1,10 @@
+<%= simple_form_for(element) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, class: "form-group" %>
+  <%= f.input :address, class: "form-group" %>
+  <%= f.input :description, class: "form-group" %>
+  <%= f.input :photo_url, class: "form-group" %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit class: "btn btn-outline-warning"%>
+<% end %>

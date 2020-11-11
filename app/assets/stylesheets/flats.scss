@@ -1,0 +1,108 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.navbar p {
+  margin-bottom: 0;
+}
+
+.container-lg {
+  margin: 30px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.card{
+  margin: 5px;
+  width: 300px;
+}
+
+.banner {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flat-info {
+  width: 600px;
+}
+
+.info-card,
+.share-card,
+.date-form {
+  background: #f6f6f6;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+  border: solid #d4d3d3 1px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px #0000002e;
+}
+
+.form-container,
+.flat-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.flat-container {
+  top: -80px;
+}
+
+.form-container {
+  flex-direction: column;
+  align-items: center;
+  top: -200px;
+}
+
+.form-box {
+  width: 700px;
+  background: white;
+  box-shadow: 4px 4px 10px #00000014;
+  padding: 30px;
+  top: -210px;
+  border-radius: 5px;
+}
+
+.flat-options {
+  margin: 0px 20px;
+}
+
+.date-form,
+.share-card {
+  width: 250px;
+}
+
+.share-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-card img {
+  width: 575px;
+  height: 300px;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+    height: 38px;
+}
+
+.form-inline {
+  margin-right: 15px;
+}
+
+.form-inline .form-control {
+  width: 260px;
+}
+
+img.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
