@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>All our flats</h1>
+  <% @flats.each_slice(3)  do |flats| %>
+    <div class="row">
+    <% flats.each  do |flat| %>
+      <div class="card" style="width: 22rem;">
+          <img src= "<%= flat.photo_url %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= flat.address%></h6>
+            <p class="card-text">🧍 <%= flat.number_of_guests %> &nbsp;&nbsp;&nbsp;&nbsp; 💵 <%= flat.price_per_night %></p>
+          </div>
+
+          <div class="card-footer text-muted d-flex justify-content-around">
+            <%= link_to "More info", flat_path(flat), class: "text-warning" %>
+            <div>
+              <%= link_to "Edit", edit_flat_path(flat), class: "text-secondary" %>
+              &nbsp;||&nbsp;
+              <%= link_to "🗑", flat_path(flat), method: :delete, data: { confirm: "Are you sure?" }, class: "text-secondary" %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+    </div>
+  <% end %>
+</div>
